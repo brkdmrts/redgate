@@ -1,0 +1,4 @@
+CREATE MATERIALIZED VIEW scott.emp_snapshot (empno,ename,"JOB",mgr,hiredate,sal,comm,deptno)
+ORGANIZATION HEAP 
+REFRESH COMPLETE 
+AS SELECT "EMP"."EMPNO" "EMPNO","EMP"."ENAME" "ENAME","EMP"."JOB" "JOB","EMP"."MGR" "MGR","EMP"."HIREDATE" "HIREDATE","EMP"."SAL" "SAL","EMP"."COMM" "COMM","EMP"."DEPTNO" "DEPTNO" FROM scott."EMP" "EMP";

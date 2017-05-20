@@ -1,0 +1,1 @@
+GRANT EXECUTE ON scott.give_raise TO PUBLIC;
