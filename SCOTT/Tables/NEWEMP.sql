@@ -6,5 +6,6 @@ CREATE TABLE scott.newemp (
   hiredate DATE,
   sal NUMBER(7,2),
   comm NUMBER(7,2),
-  deptno NUMBER(2)
+  deptno NUMBER(2),
+  description VARCHAR2(2000 BYTE)
 );
